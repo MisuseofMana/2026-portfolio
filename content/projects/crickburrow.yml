@@ -1,0 +1,12 @@
+title: Crickburrow Archives
+description: There are realms beyond your own. This photo-gallery ARG project showcases my liminal space photography and storytelling. Uses Google Firebase and Vue.js to define a suggested narrative. "Are you paying attention?"
+image: /projects/crickburrow.png
+url: "https://www.crickburrow.com"
+category: "Website"
+tags:
+  [
+    { text: "Firebase", icon: "i-custom-save" },
+    { text: "Vue", icon: "i-custom-screen" },
+    { text: "Vee Validate", icon: "i-custom-magnifier" },
+  ]
+date: "Mar. 2025"

@@ -1,0 +1,12 @@
+title: Misuse of Mana
+description: A discontinued webcomic boasts a world full of magic, friendship, and world threatening forces.
+image: /projects/misuseofmana.jpg
+url: "https://www.crickburrow.com"
+category: "Game System"
+tags:
+  [
+    { text: "Webcomic", icon: "i-custom-brush" },
+    { text: "On Hiatus", icon: "i-custom-wind" },
+    { text: "Low Fantasy", icon: "i-custom-sword" },
+  ]
+date: "May. 2025"

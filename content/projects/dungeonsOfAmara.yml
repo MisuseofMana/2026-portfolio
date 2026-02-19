@@ -1,0 +1,12 @@
+title: Dungeons Of Amara
+description: A TTRPG resource book depicting monsters, merchants, and more in a poetic format that later became the basis for my first published HTML game "Moebius Dungeons".
+image: /projects/dungeonsofamara.jpg
+url: "https://misuseofmana.gumroad.com/l/CsdPh"
+category: "Book"
+tags:
+  [
+    { text: "TTRPG", icon: "i-custom-skull" },
+    { text: "Poetry", icon: "i-custom-brush" },
+    { text: "PDF", icon: "i-custom-parchment" },
+  ]
+date: "Feb. 2023"
