@@ -1,0 +1,12 @@
+title: Moebius Dungeons
+description: An RPG roguelike dungeon crawler game coded in Vue.js using Vuex to manage character data and firebase for saving progress. My first time using Howler.js for web audio.
+image: /projects/modun.jpg
+url: "https://moebiusdungeons.com/"
+category: "Webgame"
+tags:
+  [
+    { text: "Firebase", icon: "i-custom-save" },
+    { text: "Vuex/Pinia", icon: "i-custom-trophy" },
+    { text: "Howler.js", icon: "i-custom-audio" },
+  ]
+date: "Dec. 2020"

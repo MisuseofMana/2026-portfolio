@@ -1,0 +1,12 @@
+title: Skannin'
+description: a monster collection game for the web
+image: /projects/skannin.jpg
+url: "https://misuseofmana.github.io/skannin/"
+category: "Webgame"
+tags:
+  [
+    { text: "Pinia", icon: "i-custom-save" },
+    { text: "Vuetify", icon: "i-custom-crate" },
+    { text: "Howler.js", icon: "i-custom-audio" },
+  ]
+date: "June. 2025"

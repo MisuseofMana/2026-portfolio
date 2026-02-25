@@ -1,12 +1,12 @@
 title: Misuse of Mana
 description: A discontinued webcomic boasts a world full of magic, friendship, and world threatening forces.
-image: /projects/misuseofmana.jpg
-url: "https://tapas.io/episode/793285"
+image: /projects/wishmaker.jpg
+url: "https://misuseofmana.gumroad.com/l/wishmaker"
 category: "Comic"
 tags:
   [
     { text: "Webcomic", icon: "i-custom-brush" },
-    { text: "On Hiatus", icon: "i-custom-wind" },
-    { text: "Low Fantasy", icon: "i-custom-sword" },
+    { text: "Published", icon: "i-custom-dialog" },
+    { text: "Storytelling", icon: "i-custom-character" },
   ]
-date: "May. 2025"
+date: "May. 2019"
