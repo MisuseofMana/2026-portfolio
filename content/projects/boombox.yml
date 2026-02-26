@@ -1,0 +1,12 @@
+title: Boom Box
+description: A game jam entry for the two day Mini Jame Gam /#49 featuring a 2D pixel art platformer with a retro hip hop alien aesthetic.
+image: /projects/boombox.png
+url: "https://shinbone.itch.io/boom-box"
+category: "Godot Game"
+tags:
+  [
+    { text: "Godot", icon: "i-custom-robot" },
+    { text: "Game Jam", icon: "i-custom-time" },
+    { text: "GDScript", icon: "i-custom-file" },
+  ]
+date: "Nov. 2025"

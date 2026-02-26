@@ -48,6 +48,7 @@ useSeoMeta({
           target="_blank"
           :title="project.title"
           :ui="{ leadingIcon: 'size-10' }"
+          class="[--spotlight-size:250px]"
         >
           <template #leading>
             <img

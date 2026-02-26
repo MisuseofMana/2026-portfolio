@@ -1,7 +1,8 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData("about", () => {
-  return queryCollection("about").first();
+const { data: page } = await useAsyncData("resume-page", () => {
+  return queryCollection("resume").first();
 });
+
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -9,8 +10,6 @@ if (!page.value) {
     fatal: true,
   });
 }
-
-const { global } = useAppConfig();
 
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
@@ -25,29 +24,25 @@ useSeoMeta({
     <UPageHero
       :title="page.title"
       :description="page.description"
-      orientation="horizontal"
       :ui="{
-        container: 'lg:flex sm:flex-row items-center',
         title: '!mx-0 text-left',
         description: '!mx-0 text-left',
         links: 'justify-start',
       }"
-    >
-      <UColorModeAvatar
-        class="sm:rotate-4 size-36 rounded-lg ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
-        :light="global.picture?.light!"
-        :dark="global.picture?.dark!"
-        :alt="global.picture?.alt!"
-        width="288"
-        height="288"
-      />
-    </UPageHero>
+    />
     <UPageSection
       :ui="{
         container: '!pt-0',
       }"
     >
-      <MDC :value="page.content" unwrap="p" />
+      <UTimeline
+        color="info"
+        size="xl"
+        class="w-96"
+        :default-value="0"
+        orientation="horizontal"
+        :items="page.events"
+      />
     </UPageSection>
   </UPage>
 </template>

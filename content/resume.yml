@@ -1,0 +1,14 @@
+title: Resume
+description: Where I am, what I know, and how I've got here.
+events:
+  - category: Promotion
+    description: Promoted to a Techincal Lead at Continued
+    title: "Continued"
+    date: "January 2020"
+    location: "Boston, MA"
+    icon: "i-custom-trophy"
+  - category: Start Date
+    description: "Started as a Developer"
+    title: "Continued"
+    date: "January 1999"
+    location: "Boston, MA"
