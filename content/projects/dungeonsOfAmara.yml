@@ -5,8 +5,8 @@ url: "https://misuseofmana.gumroad.com/l/CsdPh"
 category: "Book"
 tags:
   [
-    { text: "TTRPG", icon: "i-custom-skull" },
-    { text: "Poetry", icon: "i-custom-brush" },
-    { text: "PDF", icon: "i-custom-parchment" },
+    { text: "TTRPG", icon: "i-lucide-skull" },
+    { text: "Poetry", icon: "i-lucide-brush" },
+    { text: "PDF", icon: "i-lucide-parchment" },
   ]
 date: "Feb. 2023"

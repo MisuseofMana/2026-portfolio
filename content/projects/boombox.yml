@@ -5,8 +5,8 @@ url: "https://shinbone.itch.io/boom-box"
 category: "Godot Game"
 tags:
   [
-    { text: "Godot", icon: "i-custom-robot" },
-    { text: "Game Jam", icon: "i-custom-time" },
-    { text: "GDScript", icon: "i-custom-file" },
+    { text: "Godot", icon: "i-lucide-gamepad-directional" },
+    { text: "Game Jam", icon: "i-lucide-boom-box" },
+    { text: "GDScript", icon: "i-lucide-code" },
   ]
 date: "Nov. 2025"

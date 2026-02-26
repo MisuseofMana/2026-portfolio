@@ -43,12 +43,11 @@ useSeoMeta({
         <UPageCard
           v-for="project in projects"
           :key="project.title"
-          variant="subtle"
+          variant="ghost"
           :to="project.url"
           target="_blank"
           :title="project.title"
           :ui="{ leadingIcon: 'size-10' }"
-          class="[--spotlight-size:250px]"
         >
           <template #leading>
             <img
@@ -57,32 +56,33 @@ useSeoMeta({
               class="w-full"
             />
           </template>
-          <template #description>{{ project.description }}</template>
-          <template #footer>
-            <UBadge
-              v-for="tag in project.tags"
-              :key="tag"
-              :leading-icon="tag.icon"
-              color="neutral"
-              variant="outline"
-              class="text-md mr-1 mb-1"
-              :ui="{ leadingIcon: 'size-5 mr-1' }"
-            >
-              {{ tag.text }}
-            </UBadge>
-            <UBadge
-              color="info"
-              leading-icon="i-custom-time"
-              variant="outline"
-              class="text-md mb-1"
-              :ui="{ leadingIcon: 'size-5 mr-1' }"
-            >
+          <template #description>
+            <div class="mb-2">
+              {{ project.description }}
+            </div>
+            <div class="flex items-center gap-1 text-success text-sm">
+              <UIcon name="i-lucide-calendar" class="size-5 mr-1" />
               {{
                 new Date(project.date).toLocaleDateString("default", {
                   month: "short",
                   year: "numeric",
                 })
               }}
+            </div>
+          </template>
+          <template #footer>
+            <UBadge
+              v-for="tag in project.tags"
+              :key="tag.icon"
+              color="neutral"
+              variant="subtle"
+              size="md"
+              class="text-md mr-1 mb-1"
+            >
+              <template #leading>
+                <UIcon :name="tag.icon" class="size-6 mr-1 shrink-0" />
+              </template>
+              {{ tag.text }}
             </UBadge>
           </template>
         </UPageCard>

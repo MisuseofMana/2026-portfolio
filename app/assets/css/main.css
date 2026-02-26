@@ -6,6 +6,19 @@
 @theme static {
   --font-sans: "Public Sans", sans-serif;
   --font-serif: "Instrument Serif", serif;
+
+  /* Blue-tinted neutral (slate) palette for a cohesive blueish UI */
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f0f4f9;
+  --color-slate-200: #e2e9f2;
+  --color-slate-300: #c8d4e4;
+  --color-slate-400: #94a9c4;
+  --color-slate-500: #5c73a0;
+  --color-slate-600: #4a5d82;
+  --color-slate-700: #3c4d6b;
+  --color-slate-800: #263350;
+  --color-slate-900: #151d2e;
+  --color-slate-950: #0c1220;
 }
 
 :root {
