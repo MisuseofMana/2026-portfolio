@@ -27,22 +27,6 @@ const createImageSchema = () =>
     alt: z.string(),
   });
 
-const createAuthorSchema = () =>
-  z.object({
-    name: z.string(),
-    description: z.string().optional(),
-    username: z.string().optional(),
-    twitter: z.string().optional(),
-    to: z.string().optional(),
-    avatar: createImageSchema().optional(),
-  });
-
-const createTestimonialSchema = () =>
-  z.object({
-    quote: z.string(),
-    author: createAuthorSchema(),
-  });
-
 export default defineContentConfig({
   collections: {
     index: defineCollection({
@@ -51,7 +35,6 @@ export default defineContentConfig({
       schema: z.object({
         hero: z.object({
           links: z.array(createButtonSchema()),
-          images: z.array(createImageSchema()),
         }),
         about: createBaseSchema(),
         experience: createBaseSchema().extend({
@@ -68,7 +51,6 @@ export default defineContentConfig({
             }),
           ),
         }),
-        testimonials: z.array(createTestimonialSchema()),
         blog: createBaseSchema(),
         faq: createBaseSchema().extend({
           categories: z.array(
@@ -104,7 +86,6 @@ export default defineContentConfig({
         minRead: z.number(),
         date: z.date(),
         image: z.string().nonempty().editor({ input: "media" }),
-        author: createAuthorSchema(),
       }),
     }),
     pages: defineCollection({
@@ -134,16 +115,28 @@ export default defineContentConfig({
       type: "page",
       source: "resume.yml",
       schema: z.object({
+        content: z.object({}),
         links: z.array(createButtonSchema()),
         events: z.array(
           z.object({
-            category: z.enum(["Promotion", "Start Date", "Conference"]),
+            category: z.enum([
+              "Promotion",
+              "Start Date",
+              "Conference",
+              "Education",
+              "Certification",
+              "Award",
+              "Title Change",
+            ]),
             description: z.string(),
             icon: z.string().optional(),
             title: z.string(),
             date: z.date(),
             location: z.string(),
             url: z.string().optional(),
+            color: z
+              .enum(['primary', 'neutral', 'success', 'warning', 'error', 'info'])
+              .optional(),
           }),
         ),
       }),

@@ -1,14 +1,71 @@
 title: Resume
-description: Where I am, what I know, and how I've got here.
+description: What I do, what I know, and how I've got here. It's been a long and winding road full of adventures aplenty and enthusiastic growth. I'm not done yet, there's still hills to climb.
+content: |
+  ## What I Do
+
+  I make websites and games using modern web practices. I use Vue.js and Nuxt.js for web development and Godot's GDScript for making games. I specialize in front end development with a focus on user experience and accessibility. I advocate for code architecture, documentation, and human readable code. I use AI to expedite my understanding of systems and offload mundane tasks, call me old fashioned but I still write some code manually and enjoy the process of engineering by hand. 
+
+  ## What I Know
+
 events:
+  - category: Title Change
+    description: Offered Technical Lead role with leadership, mentorship, and project management responsibilities while actively developing with and overseeing a FE development team.
+    title: "Continued: Technical Lead"
+    date: "December 2025"
+    location: "Remote"
+    icon: "i-lucide-user-star"
+    color: "error"
+
+  - category: Award
+    description: Recieved an excellence award for successfully leading, mentoring, and driving results [...] pioneered the implementation of tools that improved ease of maintenence.
+    title: Excellence Award
+    date: "July 2024"
+    location: "Remote"
+    icon: "i-lucide-medal"
+    color: "error"
+
   - category: Promotion
-    description: Promoted to a Techincal Lead at Continued
-    title: "Continued"
-    date: "January 2020"
-    location: "Boston, MA"
-    icon: "i-custom-trophy"
+    description: "Promoted to Senior FE Developer with increased responsibilities, focusing on mentorship of other junior and senior developers."
+    title: "Continued: Sr. FE Developer"
+    date: "Jan 2024"
+    location: "Remote"
+    icon: "i-lucide-user-star"
+    color: "error"
+
   - category: Start Date
-    description: "Started as a Developer"
-    title: "Continued"
-    date: "January 1999"
-    location: "Boston, MA"
+    description: "Employed by Lacalle Group to modernize their legacy website Continued.com, a continuing education CMS/LMS."
+    title: "Hired At Continued"
+    date: "Dec 2021"
+    location: "Remote"
+    icon: "i-lucide-handshake"
+    color: error
+
+  - category: Certification
+    description: "Completed Austin Coding Academy's Full Stack Web Development program, gaining hands-on experience in React.js, Vue.js, and other modern web technologies."
+    title: "Graduated From Austin Coding Academy"
+    date: "March 2020"
+    location: "Austin, TX"
+    icon: "i-lucide-graduation-cap"
+    color: primary
+
+  - category: Certification
+    description: "Completed Austin Coding Academy's Full Stack Web Development program, gaining hands-on experience in React.js, Vue.js, and other modern web technologies."
+    title: "Graduated From Austin Coding Academy"
+    date: "September 2019"
+    location: "Austin, TX"
+    icon: "i-lucide-graduation-cap"
+    color: primary
+
+  - category: Start Date
+    description: Self owned LLC web development serving clientel including college campuses, Youtube channels, Kickstarters, Twitch streamers, family owned businesses, individuals etc.
+    title: Freelance Web Developer
+    location: "Remote"
+    icon: "i-lucide-keyboard"
+    color: success
+
+  - category: Education
+    description: Studied various subject matter at IUPUI in
+    title: Computer Science Program at IUPUI
+    location: "Indianapolis, IN"
+    icon: "i-lucide-graduation-cap"
+    color: neutral

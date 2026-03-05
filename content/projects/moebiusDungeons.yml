@@ -5,8 +5,8 @@ url: "https://moebiusdungeons.com/"
 category: "Webgame"
 tags:
   [
-    { text: "Firebase", icon: "i-custom-save" },
-    { text: "Vuex/Pinia", icon: "i-custom-trophy" },
-    { text: "Howler.js", icon: "i-custom-audio" },
+    { text: "Firebase", icon: "i-simple-icons-firebase" },
+    { text: "Vuex/Pinia", icon: "i-simple-icons-pinia" },
+    { text: "Howler.js", icon: "i-lucide-volume-2" },
   ]
 date: "Dec. 2020"

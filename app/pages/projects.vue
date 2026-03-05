@@ -27,7 +27,6 @@ useSeoMeta({
     <UPageHero
       :title="page.title"
       :description="page.description"
-      :links="page.links"
       :ui="{
         title: '!mx-0 text-left',
         description: '!mx-0 text-left',
@@ -43,7 +42,7 @@ useSeoMeta({
         <UPageCard
           v-for="project in projects"
           :key="project.title"
-          variant="ghost"
+          variant="outline"
           :to="project.url"
           target="_blank"
           :title="project.title"

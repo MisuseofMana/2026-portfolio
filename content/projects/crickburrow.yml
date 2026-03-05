@@ -5,8 +5,8 @@ url: "https://www.crickburrow.com"
 category: "Website"
 tags:
   [
-    { text: "Firebase", icon: "i-lucide-flame" },
-    { text: "Vue", icon: "i-lucide-boxes" },
+    { text: "Firebase", icon: "i-simple-icons-firebase" },
+    { text: "Vue", icon: "i-simple-icons-vuedotjs" },
     { text: "Vee Validate", icon: "i-lucide-package" },
   ]
 date: "Mar. 2025"

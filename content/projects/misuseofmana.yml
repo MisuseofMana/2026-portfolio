@@ -5,8 +5,8 @@ url: "https://tapas.io/episode/793285"
 category: "Comic"
 tags:
   [
-    { text: "Webcomic", icon: "i-custom-brush" },
-    { text: "On Hiatus", icon: "i-custom-wind" },
-    { text: "Low Fantasy", icon: "i-custom-sword" },
+    { text: "Webcomic", icon: "i-lucide-brush" },
+    { text: "On Hiatus", icon: "i-lucide-wind" },
+    { text: "Low Fantasy", icon: "i-lucide-sword" },
   ]
 date: "May. 2025"

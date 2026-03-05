@@ -17,6 +17,24 @@ useSeoMeta({
   description: page.value?.seo?.description || page.value?.description,
   ogDescription: page.value?.seo?.description || page.value?.description,
 });
+
+const timelineItems = computed(() => {
+  const colorToIndicatorClass: Record<string, string> = {
+    primary: "bg-primary-500",
+    neutral: "bg-neutral-500",
+    success: "bg-success-500",
+    warning: "bg-warning-500",
+    error: "bg-error-500",
+    info: "bg-info-500",
+  };
+  return (page.value?.events ?? []).map((event) => ({
+    ...event,
+    ui: {
+      indicator:
+        colorToIndicatorClass[event.color ?? "success"] ?? "bg-success-500",
+    },
+  }));
+});
 </script>
 
 <template>
@@ -35,14 +53,12 @@ useSeoMeta({
         container: '!pt-0',
       }"
     >
-      <UTimeline
-        color="info"
-        size="xl"
-        class="w-96"
-        :default-value="0"
-        orientation="horizontal"
-        :items="page.events"
-      />
+      <MDC :value="page.content" unwrap="p" class="prose" />
+      <UTimeline class="w-96" size="3xl" :items="timelineItems">
+        <template #indicator="{ item }">
+          <UIcon :name="item.icon" class="text-white" />
+        </template>
+      </UTimeline>
     </UPageSection>
   </UPage>
 </template>

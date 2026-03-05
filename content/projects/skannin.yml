@@ -5,8 +5,8 @@ url: "https://misuseofmana.github.io/skannin/"
 category: "Webgame"
 tags:
   [
-    { text: "Cookies", icon: "i-custom-save" },
-    { text: "Vuetify", icon: "i-custom-crate" },
-    { text: "Howler.js", icon: "i-custom-audio" },
+    { text: "Cookies", icon: "i-lucide-cookie" },
+    { text: "Vuetify", icon: "i-lucide-eye" },
+    { text: "Howler.js", icon: "i-lucide-volume-2" },
   ]
 date: "June. 2025"

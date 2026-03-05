@@ -5,8 +5,8 @@ url: "https://shinbone.itch.io/you-are-not-worthy"
 category: "Godot Game"
 tags:
   [
-    { text: "Godot", icon: "i-custom-robot" },
-    { text: "Game Jam", icon: "i-custom-time" },
-    { text: "GDScript", icon: "i-custom-file" },
+    { text: "Browser Game", icon: "i-lucide-gamepad" },
+    { text: "Game Jam", icon: "i-lucide-clipboard-clock" },
+    { text: "GDScript", icon: "i-simple-icons-godotengine" },
   ]
 date: "Jan. 2025"

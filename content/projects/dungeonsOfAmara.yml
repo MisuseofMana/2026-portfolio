@@ -7,6 +7,6 @@ tags:
   [
     { text: "TTRPG", icon: "i-lucide-skull" },
     { text: "Poetry", icon: "i-lucide-brush" },
-    { text: "PDF", icon: "i-lucide-parchment" },
+    { text: "Self-Published", icon: "i-lucide-file-text" },
   ]
 date: "Feb. 2023"

@@ -7,6 +7,6 @@ tags:
   [
     { text: "Godot", icon: "i-lucide-gamepad-directional" },
     { text: "Game Jam", icon: "i-lucide-boom-box" },
-    { text: "GDScript", icon: "i-lucide-code" },
+    { text: "GDScript", icon: "i-simple-icons-godotengine" },
   ]
 date: "Nov. 2025"
