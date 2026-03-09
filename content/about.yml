@@ -1,22 +1,13 @@
-title: Let's Talk About Me
-description: Nice to meet you! I'm a web developer, a comics illustrator, a 3D artist, a poet, a storyteller, but mostly I'm a well-versed, certified technology nerd.
+title: More About Me
+description: Sean here, I'm a web developer, a comics illustrator, a 3D artist, a poet, a storyteller, but mostly I'm a well-versed, certified technology nerd.
 content: |
 
   ### Where It Started
 
-  I grew up in the cornfields of Indiana, swinging tree-branch swords and imagining backyard adventures. That sense of play and story evolved into an ever-growing interest in all things internet and storytelling — and here we are.
+  I grew up wild in the cornfields of Indiana, swinging tree-branch swords in my backyard. That childhood lens of imagination and adventure evolved into an ever-growing interest in all things internet and storytelling — many years later, here we are. I'm as imaginitive as ever and creating stories of my own.
 
   ### What I Do Now
 
-  I currently work as a web developer for **continued.com**, working on their Vue site. When I'm not shipping code, I'm usually deep in worldbuilding, drawing, or turning ideas into something you can click, read, or roll dice for.
-
-  ### Get in Touch
-
-  If you're interested in finding out more about my projects, I'm all over the place on social media — just look me up!
-
-  Stay a while and browse my work, or make a selection in the navbar to filter by type!
-images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: Creative projects and inspiration
+  Since 2021 I've worked as a web developer for [**continued.com**](https://continued.com){:target="_blank"}. When I'm not shipping code, I'm usually deep in worldbuilding, drawing, or turning ideas into something you can click, read, or roll dice for.
+  
+  I'm currently the Technical Lead for a guerilla team of developers building user facing content while handling authorization, authentication.

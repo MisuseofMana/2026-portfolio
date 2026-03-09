@@ -1,25 +1,25 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData("projects-page", () => {
-  return queryCollection("pages").path("/projects").first();
-});
+const { data: page } = await useAsyncData('projects-page', () => {
+  return queryCollection('pages').path('/projects').first()
+})
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: "Page not found",
-    fatal: true,
-  });
+    statusMessage: 'Page not found',
+    fatal: true
+  })
 }
 
-const { data: projects } = await useAsyncData("projects", () => {
-  return queryCollection("projects").all();
-});
+const { data: projects } = await useAsyncData('projects', () => {
+  return queryCollection('projects').all()
+})
 
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
   ogTitle: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description,
-});
+  ogDescription: page.value?.seo?.description || page.value?.description
+})
 </script>
 
 <template>
@@ -30,12 +30,12 @@ useSeoMeta({
       :ui="{
         title: '!mx-0 text-left',
         description: '!mx-0 text-left',
-        links: 'justify-start',
+        links: 'justify-start'
       }"
     />
     <UPageSection
       :ui="{
-        container: '!pt-0',
+        container: '!pt-0'
       }"
     >
       <UPageColumns>
@@ -53,18 +53,21 @@ useSeoMeta({
               :src="project.image"
               alt="Crickburrow Archives"
               class="w-full"
-            />
+            >
           </template>
           <template #description>
             <div class="mb-2">
               {{ project.description }}
             </div>
             <div class="flex items-center gap-1 text-success text-sm">
-              <UIcon name="i-lucide-calendar" class="size-5 mr-1" />
+              <UIcon
+                name="i-lucide-calendar"
+                class="size-5 mr-1"
+              />
               {{
                 new Date(project.date).toLocaleDateString("default", {
                   month: "short",
-                  year: "numeric",
+                  year: "numeric"
                 })
               }}
             </div>
@@ -79,7 +82,10 @@ useSeoMeta({
               class="text-md mr-1 mb-1"
             >
               <template #leading>
-                <UIcon :name="tag.icon" class="size-6 mr-1 shrink-0" />
+                <UIcon
+                  :name="tag.icon"
+                  class="size-6 mr-1 shrink-0"
+                />
               </template>
               {{ tag.text }}
             </UBadge>

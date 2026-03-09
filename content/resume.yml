@@ -1,24 +1,31 @@
 title: Resume
-description: What I do, what I know, and how I've got here. It's been a long and winding road full of adventures aplenty and enthusiastic growth. I'm not done yet, there's still hills to climb.
+description: What I do and what I know. It's been a long and winding road full of adventures aplenty and enthusiastic growth. I'm not done yet, there's still hills to climb.
 content: |
   ## What I Do
 
-  I make websites and games using modern web practices. I use Vue.js and Nuxt.js for web development and Godot's GDScript for making games. I specialize in front end development with a focus on user experience and accessibility. I advocate for code architecture, documentation, and human readable code. I use AI to expedite my understanding of systems and offload mundane tasks, call me old fashioned but I still write some code manually and enjoy the process of engineering by hand. 
+  I make websites and games using modern web practices. I use Vue.js and Nuxt.js for web development and Godot's GDScript for making games. I specialize in front end development with a focus on user experience and accessibility. I advocate for code architecture, documentation, and human readable code.
 
   ## What I Know
 
+  With ten years of development under my belt I've accrued a long list of skills across a variety of technologies and frameworks. Beyond the code, I have experience as a mentor, teacher, and leader. I've seen many a migration from legacy systems to modern apps, and have strong opinions about the importance of human readable code. See my [projects page](/projects) for  more examples of my visual and technical work, or browse my [skills](/resume#skills) for a itemized list. 
+
+  ## Usage of Artificial Intelligence
+  I use AI to expedite my productivity and understanding of systems. Call me old fashioned but I still write some code manually and enjoy the process of engineering beautiful languages by hand. AI works best when it's used to augment your understandings of a system rather than replace your own decision making in entirety. Solid foundations, critical thinking, and analysis are paramount to effective use of AI.
+  
+  I believe in the power of human intelligence and the importance of understanding the systems we're building. That said, AI is an incredible tool for generating code, documentation, and other content. It's only as powerful as the context we provide it.
+
 events:
   - category: Title Change
-    description: Offered Technical Lead role with leadership, mentorship, and project management responsibilities while actively developing with and overseeing a FE development team.
+    description: Offered Technical Lead role with leadership, mentorship, and project management responsibilities, development responsibilities, and actively developing with and overseeing a FE development team.
     title: "Continued: Technical Lead"
-    date: "December 2025"
+    date: "Dec 2025"
     location: "Remote"
     icon: "i-lucide-user-star"
     color: "error"
 
   - category: Award
     description: Recieved an excellence award for successfully leading, mentoring, and driving results [...] pioneered the implementation of tools that improved ease of maintenence.
-    title: Excellence Award
+    title: "Continued: Excellence Award"
     date: "July 2024"
     location: "Remote"
     icon: "i-lucide-medal"
@@ -34,7 +41,7 @@ events:
 
   - category: Start Date
     description: "Employed by Lacalle Group to modernize their legacy website Continued.com, a continuing education CMS/LMS."
-    title: "Hired At Continued"
+    title: "Hired @ Continued"
     date: "Dec 2021"
     location: "Remote"
     icon: "i-lucide-handshake"
@@ -42,30 +49,188 @@ events:
 
   - category: Certification
     description: "Completed Austin Coding Academy's Full Stack Web Development program, gaining hands-on experience in React.js, Vue.js, and other modern web technologies."
-    title: "Graduated From Austin Coding Academy"
-    date: "March 2020"
-    location: "Austin, TX"
-    icon: "i-lucide-graduation-cap"
-    color: primary
-
-  - category: Certification
-    description: "Completed Austin Coding Academy's Full Stack Web Development program, gaining hands-on experience in React.js, Vue.js, and other modern web technologies."
-    title: "Graduated From Austin Coding Academy"
-    date: "September 2019"
+    title: "Austin Coding Academy"
+    date: "Sep 2019"
     location: "Austin, TX"
     icon: "i-lucide-graduation-cap"
     color: primary
 
   - category: Start Date
     description: Self owned LLC web development serving clientel including college campuses, Youtube channels, Kickstarters, Twitch streamers, family owned businesses, individuals etc.
+    date: Ongoing
     title: Freelance Web Developer
     location: "Remote"
     icon: "i-lucide-keyboard"
     color: success
 
   - category: Education
-    description: Studied various subject matter at IUPUI in
-    title: Computer Science Program at IUPUI
+    description: Studied various subject Computer Science subject matter at Indiana University-Purdue University Indianapolis.
+    title: CS Program at IUPUI
+    date: "2011-2015 & 2018"
     location: "Indianapolis, IN"
     icon: "i-lucide-graduation-cap"
     color: neutral
+skills:
+  content: |
+    ## Skills
+
+    An incomprehensive list of skills in my toolbelt. I've collected myriad knowledge in the arts, sciences, and technology. I have a broad range of interests and am always eager to learn new things.
+  blocks:
+    - key: web-development
+      content: |
+        ### Web Development
+
+        Front End frameworks, libraries, and languages.
+      tags:
+        - text: Vue.js 2 & 3
+          icon: "i-simple-icons-vuedotjs"
+        - text: Nuxt 2, 3 & 4
+          icon: "i-simple-icons-nuxtdotjs"
+        - text: NuxtContent
+          icon: "i-lucide-file-text"
+        - text: NuxtImage
+          icon: "i-lucide-image"
+        - text: NuxtUI
+          icon: "i-simple-icons-nuxtdotjs"
+        - text: Options & Composition API
+          icon: "i-simple-icons-nuxtdotjs"
+        - text: Tailwind CSS
+          icon: "i-simple-icons-tailwindcss"
+        - text: JavaScript
+          icon: "i-simple-icons-javascript"
+        - text: TypeScript
+          icon: "i-simple-icons-typescript"
+        - text: HTML
+          icon: "i-simple-icons-html5"
+        - text: CSS
+          icon: "i-simple-icons-css3"
+        - text: SASS/SCSS
+          icon: "i-simple-icons-sass"
+        - text: Howler.js
+          icon: "i-lucide-volume-2"
+        - text: Vue Router
+          icon: "i-lucide-route"
+        - text: Vuex/Pinia
+          icon: "i-simple-icons-pinia"
+        - text: VueUse
+          icon: "i-simple-icons-vueuse"
+        - text: Vuetify
+          icon: "i-simple-icons-vuetify"
+        - text: Vee Validate
+          icon: "i-lucide-package"
+        - text: React
+          icon: "i-simple-icons-react"
+        - text: YAML
+          icon: "i-simple-icons-yaml"
+        - text: Markdown
+          icon: "i-simple-icons-markdown"
+        - text: Figma
+          icon: "i-simple-icons-figma"
+        - text: Vitepress
+          icon: "i-simple-icons-vitepress"
+        - text: Vite
+          icon: "i-simple-icons-vite"
+        - text: Apollo GraphQL
+          icon: "i-simple-icons-apollographql"
+        - text: Nuxt GraphQL Client
+          icon: "i-simple-icons-apollographql"
+    - key: testing-qa
+      content: |
+          ### Testing & Quality Assurance
+          Testing frameworks, accessibility tools, and QA tools I've used.
+      tags:
+        - text: WAVE
+          icon: "i-lucide-eye"
+        - text: OWASP
+          icon: "i-simple-icons-owasp"
+        - text: Jest
+          icon: "i-simple-icons-jest"
+        - text: Vitest
+          icon: "i-simple-icons-vitest"
+        - text: Cypress
+          icon: "i-simple-icons-cypress"
+        - text: Cypress Cloud
+          icon: "i-lucide-cloud"
+        - text: Storybook
+          icon: "i-simple-icons-storybook"
+        - text: Google Lighthouse
+          icon: "i-simple-icons-lighthouse"
+    - key: third-party
+      content: |
+          ### Third-party Services
+          Third-party integrations and services I've implemented or used in enterprise environments.
+      tags:
+        - text: Google Firebase
+          icon: "i-simple-icons-firebase"
+        - text: Google Tag Manager
+          icon: "i-simple-icons-googletagmanager"
+        - text: Auth0
+          icon: "i-simple-icons-auth0"
+        - text: Stripe
+          icon: "i-simple-icons-stripe"
+        - text: SendGrid
+          icon: "i-simple-icons-sendgrid"
+        - text: Mailchimp
+          icon: "i-simple-icons-mailchimp"
+        - text: Zendesk
+          icon: "i-simple-icons-zendesk"
+        - text: Ketch
+          icon: "i-lucide-cookie"
+        - text: Amazon Web Services
+          icon: "i-simple-icons-amazonaws"
+        - text: LaunchDarkly
+          icon: "i-lucide-moon-star"
+        - text: Kaltura
+          icon: "i-lucide-video"
+        - text: Visual Website Optimizer
+          icon: "i-lucide-eye"
+    - key: project-managment
+      content: |
+        ### Project Management
+        Project management tools and methodologies I'm comfortable with.
+      tags:
+        - text: Jira
+          icon: "i-simple-icons-jira"
+        - text: Confluence
+          icon: "i-simple-icons-confluence"
+        - text: Scrum & Kanban
+          icon: "i-lucide-scroll"
+        - text: Agile
+          icon: "i-lucide-bolt"
+    - key: game-development
+      content: |
+        ### Game Development
+        Game development tools and languages I've used.
+      tags:
+        - text: Godot
+          icon: "i-simple-icons-godotengine"
+        - text: GDScript
+          icon: "i-lucide-code"
+        - text: Lua
+          icon: "i-simple-icons-lua"
+        - text: Blender
+          icon: "i-simple-icons-blender"
+        - text: Aseprite
+          icon: "i-simple-icons-aseprite"
+        - text: GIMP
+          icon: "i-simple-icons-gimp"
+        - text: Pico-8
+          icon: "i-lucide-gamepad-directional"
+    - key: methodologies
+      content: |
+        ### Methodologies
+        Engineering methodologies I'm partial to.
+      tags:
+        - text: Domain Driven Design
+          icon: "i-lucide-car"
+        - text: State Machines
+          icon: "i-lucide-cpu"
+        - text: Atomic Design
+          icon: "i-lucide-atom"
+        - text: Singular Concerns
+          icon: "i-lucide-brain"
+        - text: Separation of Concerns
+          icon: "i-lucide-brain"
+        - text: WET then DRY
+          icon: "i-lucide-brain"
+          

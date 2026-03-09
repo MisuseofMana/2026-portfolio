@@ -135,10 +135,32 @@ export default defineContentConfig({
             location: z.string(),
             url: z.string().optional(),
             color: z
-              .enum(['primary', 'neutral', 'success', 'warning', 'error', 'info'])
+              .enum([
+                "primary",
+                "neutral",
+                "success",
+                "warning",
+                "error",
+                "info",
+              ])
               .optional(),
           }),
         ),
+        skills: z.object({
+          content: z.string(),
+          blocks: z.array(
+            z.object({
+              key: z.string().optional(),
+              content: z.string(),
+              tags: z.array(
+                z.object({
+                  text: z.string(),
+                  icon: z.string().optional(),
+                }),
+              ),
+            }),
+          ),
+        }),
       }),
     }),
     about: defineCollection({
