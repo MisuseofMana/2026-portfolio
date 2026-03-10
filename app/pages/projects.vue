@@ -43,7 +43,6 @@ useSeoMeta({
           v-for="project in projects"
           :key="project.title"
           variant="outline"
-          :to="project.url"
           target="_blank"
           :title="project.title"
           :ui="{ leadingIcon: 'size-10' }"
@@ -55,11 +54,20 @@ useSeoMeta({
               class="w-full"
             >
           </template>
+          <UButton
+            :key="project.url"
+            :label="project.label"
+            color="primary"
+            variant="outline"
+            size="xl"
+            :to="project.url"
+            target="_blank"
+          />
           <template #description>
             <div class="mb-2">
               {{ project.description }}
             </div>
-            <div class="flex items-center gap-1 text-success text-sm">
+            <div class="flex items-center gap-1 text-primary text-sm">
               <UIcon
                 name="i-lucide-calendar"
                 class="size-5 mr-1"
@@ -79,7 +87,7 @@ useSeoMeta({
               color="neutral"
               variant="subtle"
               size="md"
-              class="text-md mr-1 mb-1"
+              class="text-md mr-1 mb-1 px-3 rounded-full"
             >
               <template #leading>
                 <UIcon

@@ -3,6 +3,7 @@ description: A dungeon themed, ant farm game jam entry for the Pirate Game Jam /
 image: /projects/youarenotworthy.jpg
 url: "https://shinbone.itch.io/you-are-not-worthy"
 category: "Godot Game"
+label: "Play Online"
 tags:
   [
     { text: "Browser Game", icon: "i-lucide-gamepad" },

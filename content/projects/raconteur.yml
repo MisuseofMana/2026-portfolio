@@ -3,6 +3,7 @@ description: An 8.5x11 TTRPG system to facilitate simplistic gameplay with a fiv
 image: /projects/raconteur.jpg
 url: "https://shinbone.itch.io/raconteur"
 category: "Game System"
+label: "Download On Itch.io"
 tags:
   [
     { text: "TTRPG", icon: "i-lucide-book-marked" },

@@ -3,6 +3,7 @@ description: a monster collection game for the web, made as a nostalgic gift for
 image: /projects/skannin.jpg
 url: "https://misuseofmana.github.io/skannin/"
 category: "Webgame"
+label: "Play Online"
 tags:
   [
     { text: "Cookies", icon: "i-lucide-cookie" },

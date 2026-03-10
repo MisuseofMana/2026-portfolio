@@ -1,10 +1,10 @@
-import { defineCollection, defineContentConfig, z } from "@nuxt/content";
+import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
 const createBaseSchema = () =>
   z.object({
     title: z.string(),
-    description: z.string(),
-  });
+    description: z.string()
+  })
 
 const createButtonSchema = () =>
   z.object({
@@ -12,121 +12,83 @@ const createButtonSchema = () =>
     icon: z.string().optional(),
     to: z.string().optional(),
     color: z
-      .enum(["primary", "neutral", "success", "warning", "error", "info"])
+      .enum(['primary', 'neutral', 'success', 'warning', 'error', 'info'])
       .optional(),
-    size: z.enum(["xs", "sm", "md", "lg", "xl"]).optional(),
+    size: z.enum(['xs', 'sm', 'md', 'lg', 'xl']).optional(),
     variant: z
-      .enum(["solid", "outline", "subtle", "soft", "ghost", "link"])
+      .enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link'])
       .optional(),
-    target: z.enum(["_blank", "_self"]).optional(),
-  });
-
-const createImageSchema = () =>
-  z.object({
-    src: z.string().editor({ input: "media" }),
-    alt: z.string(),
-  });
+    target: z.enum(['_blank', '_self']).optional()
+  })
 
 export default defineContentConfig({
   collections: {
     index: defineCollection({
-      type: "page",
-      source: "index.yml",
+      type: 'page',
+      source: 'index.yml',
       schema: z.object({
         hero: z.object({
-          links: z.array(createButtonSchema()),
+          links: z.array(createButtonSchema())
         }),
         about: createBaseSchema(),
-        experience: createBaseSchema().extend({
-          items: z.array(
-            z.object({
-              date: z.date(),
-              position: z.string(),
-              company: z.object({
-                name: z.string(),
-                url: z.string(),
-                logo: z.string().editor({ input: "icon" }),
-                color: z.string(),
-              }),
-            }),
-          ),
-        }),
-        blog: createBaseSchema(),
-        faq: createBaseSchema().extend({
-          categories: z.array(
-            z.object({
-              title: z.string().nonempty(),
-              questions: z.array(
-                z.object({
-                  label: z.string().nonempty(),
-                  content: z.string().nonempty(),
-                }),
-              ),
-            }),
-          ),
-        }),
-      }),
+        faq: z.object({
+          title: z.string().nonempty(),
+          list: z.array(z.object({
+            question: z.string().nonempty(),
+            key: z.string().nonempty(),
+            answer: z.string().nonempty()
+          }))
+        })
+      })
     }),
     projects: defineCollection({
-      type: "data",
-      source: "projects/*.yml",
+      type: 'data',
+      source: 'projects/*.yml',
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: "media" }),
+        image: z.string().nonempty().editor({ input: 'media' }),
         url: z.string().nonempty(),
-        tags: z.array(z.string()),
-        date: z.date(),
-      }),
+        label: z.string().nonempty(),
+        tags: z.array(z.object({
+          text: z.string().nonempty(),
+          icon: z.string().nonempty()
+        })),
+        date: z.date()
+      })
     }),
     blog: defineCollection({
-      type: "page",
-      source: "blog/*.md",
+      type: 'page',
+      source: 'blog/*.md',
       schema: z.object({
         minRead: z.number(),
         date: z.date(),
-        image: z.string().nonempty().editor({ input: "media" }),
-      }),
+        image: z.string().nonempty().editor({ input: 'media' })
+      })
     }),
     pages: defineCollection({
-      type: "page",
-      source: [{ include: "projects.yml" }, { include: "blog.yml" }],
+      type: 'page',
+      source: [{ include: 'projects.yml' }, { include: 'blog.yml' }],
       schema: z.object({
-        links: z.array(createButtonSchema()),
-      }),
-    }),
-    speaking: defineCollection({
-      type: "page",
-      source: "speaking.yml",
-      schema: z.object({
-        links: z.array(createButtonSchema()),
-        events: z.array(
-          z.object({
-            category: z.enum(["Live talk", "Podcast", "Conference"]),
-            title: z.string(),
-            date: z.date(),
-            location: z.string(),
-            url: z.string().optional(),
-          }),
-        ),
-      }),
+        links: z.array(createButtonSchema())
+      })
     }),
     resume: defineCollection({
-      type: "page",
-      source: "resume.yml",
+      type: 'page',
+      source: 'resume.yml',
       schema: z.object({
         content: z.object({}),
         links: z.array(createButtonSchema()),
         events: z.array(
           z.object({
             category: z.enum([
-              "Promotion",
-              "Start Date",
-              "Conference",
-              "Education",
-              "Certification",
-              "Award",
-              "Title Change",
+              'Promotion',
+              'Start Date',
+              'Conference',
+              'Education',
+              'Certification',
+              'Award',
+              'Title Change'
             ]),
             description: z.string(),
             icon: z.string().optional(),
@@ -136,15 +98,15 @@ export default defineContentConfig({
             url: z.string().optional(),
             color: z
               .enum([
-                "primary",
-                "neutral",
-                "success",
-                "warning",
-                "error",
-                "info",
+                'primary',
+                'neutral',
+                'success',
+                'warning',
+                'error',
+                'info'
               ])
-              .optional(),
-          }),
+              .optional()
+          })
         ),
         skills: z.object({
           content: z.string(),
@@ -155,21 +117,20 @@ export default defineContentConfig({
               tags: z.array(
                 z.object({
                   text: z.string(),
-                  icon: z.string().optional(),
-                }),
-              ),
-            }),
-          ),
-        }),
-      }),
+                  icon: z.string().optional()
+                })
+              )
+            })
+          )
+        })
+      })
     }),
     about: defineCollection({
-      type: "page",
-      source: "about.yml",
+      type: 'page',
+      source: 'about.yml',
       schema: z.object({
-        content: z.object({}),
-        images: z.array(createImageSchema()),
-      }),
-    }),
-  },
-});
+        content: z.object({})
+      })
+    })
+  }
+})

@@ -13,75 +13,22 @@ about:
     I'm a web developer, a comics illustrator, a 3D artist, a storyteller, a strategist, an archivist, a game designer, a writer, and a teacher.
     Above all else, I learn.
     I've worked in Continuing Education for 5 years, currently serving as the Technical Lead for a small team of developers building user facing content while handling authorization and authentication.
-experience:
-  title: Work Experience
-  items:
-    - position: "Tech Lead & Sr. FE Dev at"
-      date: "2026 - Present"
-      company:
-        name: Continued
-        logo: "i-lucide-box"
-        url: "https://raycast.com"
-        color: "#FF6363"
-    - position: "Sr. FE Developer at"
-      date: "2025 - 2026"
-      company:
-        name: Continued
-        logo: "i-lucide-box"
-        url: "https://continued.com"
-        color: "#FF6363"
-    - position: "FE Web Developer at"
-      date: "2021-2024"
-      company:
-        name: Continued
-        logo: "i-lucide-box"
-        url: "https://continued.com"
-        color: "#FF6363"
-testimonials:
-  - quote: Sean has gone above and beyond by pairing how he goes about his work with successfully leading, mentoring, and driving results on a number of important initiatives. He led research efforts and pioneered the implementation of tools that improved ease of maintenence... [he] promotes an atmosphere of collaborative, continuous learning-"
-    author:
-      name: "Continued"
-      description: "Managment"
-      avatar:
-        src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80"
-        srcset: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x"
-blog:
-  title: "Latest Articles"
-  description: "Some of my recent thoughts"
 faq:
-  title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
-  categories:
-    - title: Services & Process
-      questions:
-        - label: What services do you offer?
-          content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
-          content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
-          content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
-      questions:
-        - label: How much does a project typically cost?
-          content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
-        - label: What are your payment terms?
-          content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
-          content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
-          content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
-      questions:
-        - label: What do you enjoy most about your work?
-          content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
-          content: |
-            When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+  title: "Frequently Asked Questions"
+  list:
+    - question: "Where did you learn to program?"
+      answer: |
+        I started with **Dreamweaver** back in 2011, moved onto hand coding my own websites and apps, manually uploading to servers with an FTP client. **Then** I bought into the adoption of web frameworks, learned version control with Git, and earned a full stack certification via Austin Coding Academy in 2019. 
+
+        I've been hand coding for a long time, and now we're headed into yet another era of programming with the rise of AI. Excited to see where we go from here.
+      key: "learning-to-program"
+    - question: "What do you find most compelling about engineering?"
+      answer: |
+        I'm drawn to specific aspects of engineering where the intersection of art and technology can be explored. The idea of creating something both functional and intentionally designed is where I flourish. Taking pride and searching for ownership in my work is what motivates me to continue learning and growing. It's not just about the code, it's about the architecture, and the design, and the collaboration with others to invent a beautiful thing.
+      key: "favorite-color"
+    - question: "What do you do for fun?"
+      answer: |
+        I draw comics, play video games, board games, and I'm always looking for new ways to create and explore. I keep a pocket journal on me to capture ideas, stories, and doodles.
+
+        I'm into photography, and poetry, and hiking, and cooking and anything that involves being creative and sharing a laugh with friends. When I was younger I was a theater kid which followed me into adulthood in the form of improv comedy and commiting to the bit.
+      key: "whats-for-fun"

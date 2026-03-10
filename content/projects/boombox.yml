@@ -1,8 +1,9 @@
 title: Boom Box
-description: A game jam entry for the two day Mini Jame Gam /#49 featuring a 2D pixel art platformer with a retro hip hop alien aesthetic.
+description: "game jam entry for the two day Mini Jame Gam #49 featuring a 2D pixel art platformer with a retro hip hop alien aesthetic."
 image: /projects/boombox.png
 url: "https://shinbone.itch.io/boom-box"
 category: "Godot Game"
+label: "Play On Itch.io"
 tags:
   [
     { text: "Godot", icon: "i-lucide-gamepad-directional" },

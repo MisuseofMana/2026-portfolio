@@ -3,6 +3,7 @@ description: An RPG roguelike dungeon crawler game coded in Vue.js using Vuex to
 image: /projects/modun.jpg
 url: "https://moebiusdungeons.com/"
 category: "Webgame"
+label: "Play Online"
 tags:
   [
     { text: "Firebase", icon: "i-simple-icons-firebase" },
