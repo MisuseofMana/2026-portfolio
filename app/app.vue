@@ -19,8 +19,8 @@ useHead({
 
 useSeoMeta({
   titleTemplate: '%s',
-  ogImage: 'https://seanyager.com',
-  twitterImage: 'https://seanyager.com',
+  ogImage: 'https://seanyager.com/og-image.png',
+  twitterImage: 'https://seanyager.com/og-image.png',
   twitterCard: 'summary_large_image'
 })
 

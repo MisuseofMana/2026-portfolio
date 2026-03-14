@@ -160,7 +160,7 @@ skills:
           icon: "i-simple-icons-apollographql"
         - text: Nuxt GraphQL Client
           icon: "i-simple-icons-apollographql"
-    - key: assistive-intelligence
+    - key: artificial-intelligence
       content: |
         ### Artificial Intelligence
         AI tools and services I've used.
