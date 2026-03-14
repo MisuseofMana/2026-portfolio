@@ -1,11 +1,5 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
-const createBaseSchema = () =>
-  z.object({
-    title: z.string(),
-    description: z.string()
-  })
-
 const createButtonSchema = () =>
   z.object({
     label: z.string(),
