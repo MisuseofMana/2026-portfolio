@@ -48,13 +48,15 @@ const timelineItems = computed(() => {
         links: 'justify-start'
       }"
     />
-    <UPageSection
-      :ui="{
-        container: '!pt-0'
-      }"
-    >
+    <UPageSection>
       <MDC
         :value="page.content"
+      />
+    </UPageSection>
+
+    <UPageSection>
+      <MDC
+        :value="page.timelineHeading"
       />
       <UTimeline
         size="3xl"
@@ -76,6 +78,24 @@ const timelineItems = computed(() => {
           {{ item.date }}
         </template>
       </UTimeline>
+    </UPageSection>
+
+    <UPageSection>
+      <MDC :value="page.accomplishments.content" />
+      <UAccordion
+        trailing-icon="lucide:chevron-down"
+        :items="page.accomplishments.list"
+        :unmount-on-hide="false"
+      >
+        <template #body="{ item: _item }">
+          <MDC
+            class="px-4"
+            :value="_item.description"
+          />
+        </template>
+      </UAccordion>
+    </UPageSection>
+    <UPageSection>
       <div>
         <MDC
           :value="page.skills.content"

@@ -62,7 +62,7 @@ body::before {
 .dark body::before {
   background: linear-gradient(
     to bottom,
-    rgba(2, 6, 24, 0.9) 0%,
-    rgba(2, 6, 24, 0.8) 100%
+    rgba(2, 6, 24, 0.95) 0%,
+    rgba(2, 6, 24, 0.95) 100%
   );
 }

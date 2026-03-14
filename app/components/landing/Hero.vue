@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from "@nuxt/content";
+import type { IndexCollectionItem } from '@nuxt/content'
 
-const { footer, global } = useAppConfig();
+const { footer, global } = useAppConfig()
 
 defineProps<{
-  page: IndexCollectionItem;
-}>();
+  page: IndexCollectionItem
+}>()
 </script>
 
 <template>
@@ -13,7 +13,7 @@ defineProps<{
     :ui="{
       headline: 'flex items-center justify-center',
       title: 'text-shadow-md max-w-lg mx-auto',
-      links: 'mt-4 flex-col justify-center items-center',
+      links: 'flex-col justify-center items-center'
     }"
   >
     <template #headline>
@@ -21,16 +21,16 @@ defineProps<{
         :initial="{
           scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)',
+          filter: 'blur(20px)'
         }"
         :animate="{
           scale: 1,
           opacity: 1,
-          filter: 'blur(0px)',
+          filter: 'blur(0px)'
         }"
         :transition="{
           duration: 0.6,
-          delay: 0.1,
+          delay: 0.1
         }"
       >
         <UColorModeAvatar
@@ -49,16 +49,16 @@ defineProps<{
         :initial="{
           scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)',
+          filter: 'blur(20px)'
         }"
         :animate="{
           scale: 1,
           opacity: 1,
-          filter: 'blur(0px)',
+          filter: 'blur(0px)'
         }"
         :transition="{
           duration: 0.6,
-          delay: 0.1,
+          delay: 0.1
         }"
       >
         {{ page.title }}
@@ -70,16 +70,16 @@ defineProps<{
         :initial="{
           scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)',
+          filter: 'blur(20px)'
         }"
         :animate="{
           scale: 1,
           opacity: 1,
-          filter: 'blur(0px)',
+          filter: 'blur(0px)'
         }"
         :transition="{
           duration: 0.6,
-          delay: 0.3,
+          delay: 0.3
         }"
       >
         {{ page.description }}
@@ -94,16 +94,16 @@ defineProps<{
           :initial="{
             scale: 1.1,
             opacity: 0,
-            filter: 'blur(20px)',
+            filter: 'blur(20px)'
           }"
           :animate="{
             scale: 1,
             opacity: 1,
-            filter: 'blur(0px)',
+            filter: 'blur(0px)'
           }"
           :transition="{
             duration: 0.6,
-            delay: 0.5 + index * 0.1,
+            delay: 0.5 + index * 0.1
           }"
         >
           <UButton

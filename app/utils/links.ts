@@ -15,10 +15,5 @@ export const navLinks: NavigationMenuItem[] = [
     label: 'Resume',
     icon: 'i-lucide-file-text',
     to: '/resume'
-  },
-  {
-    label: 'About',
-    icon: 'i-lucide-user',
-    to: '/about'
   }
 ]

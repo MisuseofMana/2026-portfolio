@@ -1,18 +1,20 @@
 seo:
-  title: "Sean Yager - Web Developer"
+  title: "Sean Yager - Homepage"
 title: "What's up, I'm Sean Yager a Web Developer & Storyteller"
 description: "I'm deeply invested in engineering as an artistic medium, using programming languages to communicate narratives, make connections, author zines, create games, etc. You get the gist, right? I make stuff."
-hero:
-  links:
-    - label: "Email me."
-      to: "mailto:contact@seanyager.com"
-      color: "warning"
-about:
-  title: "About Me"
-  description:
-    I'm a web developer, a comics illustrator, a 3D artist, a storyteller, a strategist, an archivist, a game designer, a writer, and a teacher.
-    Above all else, I learn.
-    I've worked in Continuing Education for 5 years, currently serving as the Technical Lead for a small team of developers building user facing content while handling authorization and authentication.
+content: |
+
+  ### Where I'm From
+
+  I grew up wild in the cornfields of Indiana, swinging tree-branch swords in my backyard. That childhood lens of imagination and adventure evolved into an ever-growing interest in all things internet and storytelling — many years later, here we are. I'm as imaginative as ever and creating stories of my own.
+
+  Currently living in Austin, Texas.
+
+  ### What I Do
+
+  Since 2021 I've worked as a web developer for [**continued.com**](https://continued.com){:target="_blank"}. When I'm not shipping code, I'm usually deep in worldbuilding, drawing, or turning ideas into something you can click, read, or roll dice for.
+  
+  I'm currently the Technical Lead for a guerilla team of developers building user facing content while handling authorization and authentication for our continuing education platform.
 faq:
   title: "Frequently Asked Questions"
   list:
@@ -30,5 +32,5 @@ faq:
       answer: |
         I draw comics, play video games, board games, and I'm always looking for new ways to create and explore. I keep a pocket journal on me to capture ideas, stories, and doodles.
 
-        I'm into photography, and poetry, and hiking, and cooking and anything that involves being creative and sharing a laugh with friends. When I was younger I was a theater kid which followed me into adulthood in the form of improv comedy and commiting to the bit.
+        I'm into photography, and poetry, and hiking, and cooking and anything that involves being creative and sharing a laugh with friends. When I was younger I was a theater kid which followed me into adulthood in the form of improv comedy and committing to the bit.
       key: "whats-for-fun"

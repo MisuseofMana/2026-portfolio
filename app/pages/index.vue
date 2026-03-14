@@ -23,8 +23,32 @@ useSeoMeta({
 <template>
   <UPage v-if="page">
     <LandingHero :page />
-    <UPageSection v-if="page.faq?.list?.length">
-      <LandingFAQ :page="page" />
-    </UPageSection>
+    <Motion
+      :initial="{
+        scale: 1.1,
+        opacity: 0,
+        filter: 'blur(20px)'
+      }"
+      :animate="{
+        scale: 1,
+        opacity: 1,
+        filter: 'blur(0px)'
+      }"
+      :transition="{
+        duration: 0.6,
+        delay: 0.8
+      }"
+    >
+      <UPageSection
+        :ui="{
+          container: '!pt-0'
+        }"
+      >
+        <MDC
+          :value="page.content"
+        />
+      </UPageSection>
+    </Motion>
+    <LandingFAQ :page="page" />
   </UPage>
 </template>

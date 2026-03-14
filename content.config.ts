@@ -27,10 +27,7 @@ export default defineContentConfig({
       type: 'page',
       source: 'index.yml',
       schema: z.object({
-        hero: z.object({
-          links: z.array(createButtonSchema())
-        }),
-        about: createBaseSchema(),
+        content: z.object({}),
         faq: z.object({
           title: z.string().nonempty(),
           list: z.array(z.object({
@@ -79,6 +76,7 @@ export default defineContentConfig({
       schema: z.object({
         content: z.object({}),
         links: z.array(createButtonSchema()),
+        timelineHeading: z.string(),
         events: z.array(
           z.object({
             category: z.enum([
@@ -108,6 +106,14 @@ export default defineContentConfig({
               .optional()
           })
         ),
+        accomplishments: z.object({
+          content: z.string(),
+          list: z.array(z.object({
+            icon: z.string().optional(),
+            title: z.string().nonempty(),
+            description: z.string().nonempty()
+          }))
+        }),
         skills: z.object({
           content: z.string(),
           blocks: z.array(
@@ -123,13 +129,6 @@ export default defineContentConfig({
             })
           )
         })
-      })
-    }),
-    about: defineCollection({
-      type: 'page',
-      source: 'about.yml',
-      schema: z.object({
-        content: z.object({})
       })
     })
   }
